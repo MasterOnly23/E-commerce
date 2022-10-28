@@ -88,9 +88,13 @@ align-items: center;
    position:relative;  
    right:3px;  
  }  
+
+
  .img-slider img{  
    height:720px;  
-   width:1080px;  
+   width:1080px;
+   border-radius: 5%;  
+
  }  
  @keyframes slide{  
    0%{  
@@ -125,11 +129,16 @@ align-items: center;
     }  
     82%{  
       left:-5400px;  
-    }  
+    }
+    92%{  
+      left:-5400px;  
+    }   
     100%{  
       left:0px;  
-  }}  
+  }
+}  
   .img-slider{  
+    margin-top: 10px;
     display:flex;  
     float:left;  
     position:relative;  
@@ -165,11 +174,16 @@ align-items: center;
     .section2 .container .items{  
       margin: 10px;  
       width:200px;  
-      height: 300px;  
+      height: 350px;  
       background-color:white;  
       border:2.5px solid black;  
       border-radius: 12px;  
     }  
+
+    .section2 .container a{
+      text-decoration: none;
+    }
+
     .section2 .container .items .name{  
   text-align:center;  
   background-color:rgb(240, 197, 6);  
@@ -177,18 +191,21 @@ align-items: center;
   padding-top:4px;  
   color:white;  
   margin: 0;  
+
     }  
     .section2 .container .items .price{  
   float:left;  
-  padding-left:10px;  
+  padding-left:40%;  
   display: block;  
   width:100%;  
   color:rgb(255, 0, 0);  
-  font-weight: 650;  
+  font-weight: 700; 
+  margin-top: 5px; 
     }  
     .section2 .container .items .info{  
       padding-left:10px;  
-      color:rgb(243, 168, 7);  
+      color:rgb(243, 168, 7); 
+      margin-top: 15px; 
     }  
     .section2 .container .items .img img{  
   width:200px;  
