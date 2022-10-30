@@ -4,7 +4,7 @@
 
    precioDolar = document.querySelector("#precio").innerHTML
 
-    let url = "https://api.bluelytics.com.ar/json/last_price"
+    let url = "https://api.bluelytics.com.ar/v2/latest"
 
     var checkbox = document.querySelector("#ARS");
 
@@ -13,8 +13,8 @@
             fetch(url)
             .then(r => r.json())
             .then(function(data)  {
-              console.log(data[1].value_avg)
-              let cambio = document.querySelector("#precio").innerHTML * data[1].value_avg
+              console.log(data.blue.value_avg)
+              let cambio = document.querySelector("#precio").innerHTML * data.blue.value_avg
         
               precios.forEach(function cambioValor(precio){
                 precio.innerHTML = cambio
@@ -32,8 +32,8 @@
             fetch(url)
             .then(r => r.json())
             .then(function(data)  {
-              console.log(data[1].value_avg)
-              let cambio = document.querySelector("#precio").innerHTML * data[1].value_avg
+              console.log(data.blue.value_avg)
+              let cambio = document.querySelector("#precio").innerHTML * data.blue.value_avg
         
               precios.forEach(function cambioValor(precio){
                 precio.innerHTML = precioDolar 
