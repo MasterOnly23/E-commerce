@@ -90,6 +90,21 @@ align-items: center;
  }  
 
 
+ #text-moneda{
+  color: #fff;
+  cursor: pointer;
+ }
+
+#text-tipo-moneda{
+  color: #fff;
+  padding-right: 10px;
+  
+}
+
+#ARS{
+  cursor: pointer;
+}
+
  .img-slider img{  
    height:720px;  
    width:1080px;
@@ -156,6 +171,11 @@ align-items: center;
     display:flex;  
     position: relative;  
   }  
+
+.section-podructs{
+  margin-top: 70px;
+}
+
   .section1{  
     width:1080px;  
     overflow:hidden;  
@@ -195,7 +215,7 @@ align-items: center;
     }  
     .section2 .container .items .price{  
   float:left;  
-  padding-left:40%;  
+  padding-left:30%;  
   display: block;  
   width:100%;  
   color:rgb(255, 0, 0);  
@@ -289,7 +309,8 @@ margin-top:15px;
   color:rgb(243, 168, 7) ;  
 }  
 .footer2 .div:hover{  
-transform: scale(1.05);  
+transform: scale(1.05); 
+cursor: pointer; 
 }  
 .footer3 h4{  
   margin:0 10px;  

@@ -4,20 +4,49 @@
    <meta charset="UTF-8">  
    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-   <title>Document</title>  
+   <title>Luxury Tech</title>  
    <link rel="stylesheet" href="./static/css/ecommerce.css">  
    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">  
+   <link rel="stylesheet" href="./static/css/loader.css">
+
+  <!--Fav icon-->
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./static/img/logo/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./static/img/logo/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./static/img/logo/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./static/img/logo/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./static/img/logo/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./static/img/logo/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./static/img/logo/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./static/img/logo/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/img/logo/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./static/img/logo/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/img/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./static/img/logo/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/img/logo/favicon-16x16.png">
+  <link rel="manifest" href="./static/img/logo/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./static/img/logo/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
  </head>  
  <body>  
+
+
+<div id="contenedor-loader">
+    <div id="cargador"></div>
+  </div>
+
+
    <header>  
      <div class="logo"><a href="#">Luxury Tech</a></div>  
      <div class="menu">  
        <a href=""><ion-icon name="close" class="close"></ion-icon></a>  
        <ul>  
-         <li><a href="#" class="under">HOME</a></li>  
-         <li><a href="#" class="under">SHOP</a></li>  
-         <li><a href="#" class="under">OUR PRODUCTS</a></li>  
-         <li><a href="#" class="under">CONTACT US</a></li>  
+         <li><a href="index.html" class="under">HOME</a></li>  
+         <li><a href="productos.html" class="under">OUR PRODUCTS</a></li>  
+         <li><a href="contact.html" class="under">CONTACT US</a></li>  
          <li><a href="#" class="under">ABOUT US</a></li>  
        </ul>  
      </div>  
@@ -28,33 +57,33 @@
      </div>  
      <div class="heading">  
        <ul>  
-         <li><a href="#" class="under">HOME</a></li>  
-         <li><a href="#" class="under">SHOP</a></li>  
-         <li><a href="#" class="under">OUR PRODUCTS</a></li>  
-         <li><a href="#" class="under">CONTACT US</a></li>  
+         <li><a href="index.html" class="under">HOME</a></li>    
+         <li><a href="productos.html" class="under">OUR PRODUCTS</a></li>  
+         <li><a href="contact.html" class="under">CONTACT US</a></li>  
          <li><a href="#" class="under">ABOUT US</a></li>  
        </ul>  
      </div>  
      <div class="heading1">  
        <ion-icon name="menu" class="ham"></ion-icon>  
-     </div>  
+     </div>
+     <div><span id="text-tipo-moneda">Currency:</span><span id="text-moneda"><input type="checkbox" name="ARS" id="ARS">ARS</span> </div>    
    </header>  
    <section>  
      <div class="section">  
        <div class="section1">  
          <div class="img-slider">  
-           <img src="./static/img/macbookpro-m2.png"  
-             alt="" class="img">  
-           <img src="./static/img/4090-4080.jpg"  
-             alt="" class="img">  
-           <img src="./static/img/odyssey-g9.png"  
-             alt="" class="img">  
-           <img src="./static/img/iphone14.png"  
-             alt="" class="img">  
-           <img src="./static/img/mouse.png"  
-             alt="" class="img">  
-            <img src="./static/img/Intel-13th-Gen.png"  
-             alt="" class="img"> 
+           <a href="productos.html"><img src="./static/img/macbookpro-m2.png"  
+             alt="" class="img">  </a>
+           <a href="productos.html"><img src="./static/img/4090-4080.jpg"  
+             alt="" class="img"> </a> 
+           <a href="productos.html"><img src="./static/img/odyssey-g9.png"  
+             alt="" class="img"> </a> 
+           <a href="productos.html"><img src="./static/img/iphone14.png"  
+             alt="" class="img"> </a> 
+           <a href="productos.html"><img src="./static/img/mouse.png"  
+             alt="" class="img"> </a> 
+            <a href="productos.html"><img src="./static/img/Intel-13th-Gen.png"  
+             alt="" class="img"> </a>
          </div>  
        </div>  
        <div class="section2">  
@@ -63,9 +92,10 @@
              <div class="img img1"><img  
                  src="./static/img/iphone14-p.jpg"  
                  alt=""></div>  
-             <div class="name">Iphone 14 Pro Max</div>  
-             <div class="price">$1300</div>  
-             <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+             <div class="name">Iphone 14 Pro Max</div>
+             <div class="price" ><span id="moneda">USD:</span>  <span class="precio" id="precio">1300</span></div>  
+             <div class="info">Dynamic Island
+              A new way to interact with iPhone</div>
             </div>
 
             <div class="items">  
@@ -73,7 +103,7 @@
                   src="./static/img/apple_watch_ultra.png"  
                   alt=""></div>  
               <div class="name">Apple Watch Ultra</div>  
-              <div class="price">$800</div>  
+              <div class="price" ><span id="moneda">USD:</span>  <span class="precio" id="precio">800</span></div>   
               <div class="info">GPS + Cellular
                 Make calls and send messages with just your Apple Watch. Works with Family Setup.</div>
              </div>
@@ -84,7 +114,7 @@
                   src="./static/img/rtx-4090.jpg"  
                   alt=""></div>  
               <div class="name">Nvidia RTX 4090</div>  
-              <div class="price">$2000</div>  
+              <div class="price" ><span id="moneda">USD:</span>  <span class="precio" id="precio">2000</span></div>  
               <div class="info">The RTX 4090 is the ultimate GPU. It delivers leaps in performance, efficiency, and AI-powered graphics.</div>
              </div>
             </a>
@@ -98,8 +128,8 @@
 
    <footer>  
      <div class="footer0">  
-       <h1>ShoPperZ</h1>  
-     </div>  
+       <h1>Luxury Tech</h1>
+     </div>
      <div class="footer1 ">  
        Connect with us at<div class="social-media">  
          <a href="#">  
@@ -152,6 +182,12 @@
      <div class="footer3">Copyright © <h4>Sweet Luxury</h4> 2022</div>  
    </footer>  
    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>  
-   <script src="./static/js/ecommerce.js"></script>  
+   <script src="./static/js/ecommerce.js"></script> 
+   
+
+   <script src="./static/js/api_cambio.js"></script>
+
+   <script src="./static/js/loader.js"></script>
+  
  </body>  
  </html> 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>  
+ <html lang="en">  
+ <head>  
+   <meta charset="UTF-8">  
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <title>Luxury Tech</title>  
+   <link rel="stylesheet" href="./static/css/ecommerce.css">  
+   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">  
+   <link rel="stylesheet" href="static/css/contactstyle.css">
+   <link rel="stylesheet" href="./static/css/loader.css">
+
+  <!--Fav icon-->
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./static/img/logo/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./static/img/logo/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./static/img/logo/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./static/img/logo/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./static/img/logo/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./static/img/logo/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./static/img/logo/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./static/img/logo/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/img/logo/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./static/img/logo/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/img/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./static/img/logo/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/img/logo/favicon-16x16.png">
+  <link rel="manifest" href="./static/img/logo/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./static/img/logo/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+ </head>  
+ <body> 
+    
+    <div id="contenedor-loader">
+        <div id="cargador"></div>
+      </div>
+
+
+  <header>  
+    <div class="logo"><a href="#">Luxury Tech</a></div>  
+    <div class="menu">  
+      <a href=""><ion-icon name="close" class="close"></ion-icon></a>  
+      <ul>  
+        <li><a href="index.html" class="under">HOME</a></li>  
+        <li><a href="productos.html" class="under">OUR PRODUCTS</a></li>  
+        <li><a href="#" class="under">CONTACT US</a></li>  
+        <li><a href="#" class="under">ABOUT US</a></li>  
+      </ul>  
+    </div>  
+
+    <div class="heading">  
+      <ul>  
+        <li><a href="index.html" class="under">HOME</a></li>    
+        <li><a href="productos.html" class="under">OUR PRODUCTS</a></li>  
+        <li><a href="#" class="under">CONTACT US</a></li>  
+        <li><a href="#" class="under">ABOUT US</a></li>  
+      </ul>  
+    </div>  
+    <div class="heading1">  
+      <ion-icon name="menu" class="ham"></ion-icon>  
+    </div>  
+  </header> 
+
+
+    
+    <body>	
+      
+    
+        <div class="contact_form">
+    
+            <div class="formulario">			
+          <h1>Contact Form</h1>
+                    <h3>Write us and we will contact you shortly</h3>
+    
+    
+                        <form action="https://formspree.io/f/mnqrgwrn" method="POST">				
+    
+                            
+                                    <p>
+                                        <label for="nombre" class="colocar_nombre">Name
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Your Name">
+                                    </p>
+                                
+                                    <p>
+                                        <label for="email" class="colocar_email">Email
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Your Email">
+                                    </p>
+                            
+                                    <p>
+                                        <label for="telefone" class="colocar_telefono">Phone
+                                        </label>
+                                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Your PhoneNumber">
+                                    </p>		
+                                		
+                                
+                                    <p>
+                                        <label for="asunto" class="colocar_asunto">Subject
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Subject">
+                                    </p>		
+                                
+                                    <p>
+                                        <label for="mensaje" class="colocar_mensaje">Message
+                                            <span class="obligatorio">*</span>
+                                        </label>                     
+                                             <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="message..."></textarea> 
+                                       </p>	  								
+                                
+                                    <button type="submit" name="enviar_formulario" id="enviar"><p>SEND</p></button>
+    
+                                    <p class="aviso">
+                                        <span class="obligatorio"> * </span>fields are required.
+                                    </p>					
+                            
+                        </form>
+            </div>	
+        </div>
+    
+        <script src="./static/js/loader.js"></script>
+    </body>
+    </html>
