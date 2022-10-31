@@ -29,6 +29,7 @@
   <meta name="msapplication-TileImage" content="./static/img/logo/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="stylesheet" href="./static/css/bootstrap.css">
 
  </head>  
  <body>  
@@ -64,7 +65,17 @@
     <div class="heading1">  
       <ion-icon name="menu" class="ham"></ion-icon>  
     </div>
-    <div><span id="text-tipo-moneda">Currency:</span><span id="text-moneda"><input type="checkbox" name="ARS" id="ARS">ARS</span> </div>  
+    <!-- <div><span id="text-tipo-moneda">Currency:</span><span id="text-moneda"><input type="checkbox" name="ARS" id="ARS">ARS</span> </div>   -->
+    <div class="btn-group">
+      <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Currency
+      </button>
+      <ul class="dropdown-menu">
+        <li><span id="text-moneda"><input type="checkbox" name="USD" id="USD">USD</span></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><span id="text-moneda"><input type="checkbox" name="ARS" id="ARS" >ARS</span> </li>
+      </ul>
+    </div>
   </header> 
 
 
@@ -283,5 +294,6 @@
 <script src="./static/js/ecommerce.js"></script>  
 <script src="./static/js/api_cambio.js"></script>
 <script src="./static/js/loader.js"></script>
+<script src="./static/js/bootstrap.bundle.min.js"></script>
 </body>  
 </html> 

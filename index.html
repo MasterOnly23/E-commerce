@@ -30,6 +30,9 @@
   <meta name="theme-color" content="#ffffff">
 
 
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dropdowns/">
+  <link rel="stylesheet" href="./static/css/bootstrap.css">
+
  </head>  
  <body>  
 
@@ -66,7 +69,20 @@
      <div class="heading1">  
        <ion-icon name="menu" class="ham"></ion-icon>  
      </div>
-     <div><span id="text-tipo-moneda">Currency:</span><span id="text-moneda"><input type="checkbox" name="ARS" id="ARS">ARS</span> </div>    
+     <!-- <div><span id="text-tipo-moneda">Currency:</span><span id="text-moneda"><input type="checkbox" name="ARS" id="ARS" >ARS</span> 
+      <span id="text-moneda"><input type="checkbox" name="ARS" id="USD">USD</span>
+  
+    </div>     -->
+    <div class="btn-group">
+      <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Currency
+      </button>
+      <ul class="dropdown-menu">
+        <li><span id="text-moneda"><input type="checkbox" name="USD" id="USD">USD</span></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><span id="text-moneda"><input type="checkbox" name="ARS" id="ARS" >ARS</span> </li>        
+      </ul>
+    </div>
    </header>  
    <section>  
      <div class="section">  
@@ -108,7 +124,7 @@
               <div class="name">Apple Watch Ultra</div>  
               <div class="price" ><span id="moneda">USD:</span>  <span class="precio" id="precio">800</span></div>   
               <div class="info">GPS + Cellular
-                Make calls and send messages with just your Apple Watch. Works with Family Setup.</div>
+                Make calls and send messages with your Apple Watch. Works with Family Setup.</div>
              </div>
             </a>
 
@@ -119,7 +135,7 @@
                   alt=""></div>  
               <div class="name">Nvidia RTX 4090</div>  
               <div class="price" ><span id="moneda">USD:</span>  <span class="precio" id="precio">2000</span></div>  
-              <div class="info">The RTX 4090 is the ultimate GPU. It delivers leaps in performance, efficiency, and AI-powered graphics.</div>
+              <div class="info">The RTX 4090 is the ultimate GPU. It delivers leaps in performance,and AI-powered graphics.</div>
              </div>
             </a>
 
@@ -193,6 +209,7 @@
 
 
    <script src="./static/js/loader.js"></script>
+   <script src="./static/js/bootstrap.bundle.min.js"></script>
   
  </body>  
  </html> 

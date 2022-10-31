@@ -91,8 +91,10 @@ align-items: center;
 
 
  #text-moneda{
-  color: #fff;
+  color: black;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
  }
 
 #text-tipo-moneda{
@@ -103,6 +105,13 @@ align-items: center;
 
 #ARS{
   cursor: pointer;
+  margin-right: 3px;
+}
+
+#USD{
+  cursor: pointer;
+  margin-right: 3px;
+
 }
 
  .img-slider img{  
@@ -194,7 +203,7 @@ align-items: center;
     .section2 .container .items{  
       margin: 10px;  
       width:200px;  
-      height: 350px;  
+      height: 380px;  
       background-color:white;  
       border:2.5px solid black;  
       border-radius: 12px;  
