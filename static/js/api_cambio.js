@@ -24,6 +24,7 @@
     
     checkbox2.checked = true;
 
+
     // var usd = document.querySelector("#USD");
     // var ars = document.querySelector("#ARS");
 
@@ -106,6 +107,7 @@
         } 
       })
 
+
       checkbox2.addEventListener('change', function() {
         
         checkbox.checked = false;
@@ -125,7 +127,7 @@
               })
 
               moneda.forEach(function cambioMoneda(tipo){
-                tipo.innerHTML = "ARS: "
+                tipo.innerHTML = "USD: "
                 console.log(moneda.innerHTML)
               })
             
@@ -133,7 +135,6 @@
             .catch(error => console.error(error))
         }
       })
-      
       
 
 
