@@ -12,7 +12,8 @@ align-items: center;
  background:black;  
  }  
  .heading ul{  
-   display:flex;  
+   display:flex; 
+   margin: auto; 
    }  
  .logo a{  
    color:white;  
@@ -24,7 +25,8 @@ align-items: center;
    transition-duration: 1s;  
  }  
  .heading ul li{  
-   list-style: none;  
+   list-style: none; 
+
  }  
  .heading ul li a{  
    margin:5px;  
