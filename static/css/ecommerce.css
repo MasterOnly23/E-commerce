@@ -225,7 +225,8 @@ align-items: center;
     .section2 .container .items .price{  
   float:left;  
   padding-left:30%;  
-  display: block;  
+  display: flex;
+  justify-content: start;  
   width:100%;  
   color:rgb(255, 0, 0);  
   font-weight: 700; 
